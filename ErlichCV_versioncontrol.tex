@@ -1,3 +1,5 @@
+\let\latexnofiles\nofiles
+\let\nofiles\relax
 \documentclass[margin,line]{res}
 
 \usepackage{hyperref}
@@ -6,6 +8,7 @@
 %\usepackage{lastpage}
 %\usepackage[lastpage,user]{zref}
 \usepackage[page]{totalcount}
+\usepackage{etaremune}
 
 \usepackage{totpages}
 \pagestyle{fancy}
@@ -13,12 +16,12 @@
 \renewcommand{\footrulewidth}{0}
 \fancyfoot{}
 \fancyfoot[L]{\emph {Last updated \today}}
-\fancyfoot[R]{\thepage ~of 5}
+\fancyfoot[R]{\thepage ~of 7}
 
 \usepackage{lipsum}
 
 \newcommand\textline[4][t]{%
-  \par\smallskip\noindent\parbox[#1]{.17\textwidth}{\raggedright#2}%
+  \par\noindent\parbox[#1]{.17\textwidth}{\raggedright#2}%
  \parbox[#1]{.7\textwidth}{\raggedright#3}% 
  \parbox[#1]{.13\textwidth}{\raggedleft#4}\par\smallskip%
 }
@@ -48,13 +51,13 @@
       \setlength{\leftmargin}{0.2in}}}{\end{list}}
 
 
-\hypersetup{ 
-colorlinks,% 
-citecolor=blue,% 
-filecolor=blue,% 
-linkcolor=blue,% 
-urlcolor=blue 
-} 
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=Maroon,
+    filecolor=Maroon,      
+    urlcolor=Maroon,
+}
 
 \begin{document}
 
@@ -76,8 +79,8 @@ Montréal, QC, H3A 2T7  &        {\it Office:}  McTavish 24-3\\
 \vspace*{-.1in}
 \begin{list1}
 \item[] Assistant Professor, {August 2016-}
-\item[] Founding Member, Centre for Social and Cultural Data Science (CSCDS) , {September 2016-
-\item[] Member, Centre for the Study of Democratic Citizenship (CSDC), {February 2017-
+\item[] Founding Member, Centre for Social and Cultural Data Science (CSCDS) , {September 2016-}
+\item[] Member, Centre for the Study of Democratic Citizenship (CSDC), {February 2017-}
 
 \end{list1}
 
@@ -110,98 +113,192 @@ Montréal, QC, H3A 2T7  &        {\it Office:}  McTavish 24-3\\
 \item[] B.A., \emph{cum laude}, Government,  2002
 \end{list1}
 
-\section{\sc Research Interests}
-\textbf{Substantive}: Political economy of development, public opinion
-and voting behavior, political participation in new
-democracies, election fraud and
-political corruption, democratization,  labor migration, post-Soviet states, Sub-Saharan Africa.
+% \section{\sc Research Interests}
+% \textbf{Substantive}: Political economy of development, public opinion
+% and voting behavior, political participation in new
+% democracies, election fraud and
+% political corruption, democratization,  labor migration, post-Soviet states, Sub-Saharan Africa.
 
-\textbf{Methodological}: Randomized impact evaluation,
-lab-in-the-field experiments, survey design and analysis, development engineering, big data, ethnography, elite
-interviews, mixed-methods designs.
+% \textbf{Methodological}: Randomized impact evaluation,
+% lab-in-the-field experiments, survey design and analysis, development engineering, big data, ethnography, elite
+% interviews, mixed-methods designs.
 
 \section{\sc Peer-Reviewed Publications}
- ``‘The local
-  \emph{mwananchi} has lost trust’: Design, transition, and legitimacy
-  in Kenyan election management.' 2016. \emph{Journal of Modern African
-    Studies} 54(4): 671-702. (with Nicholas Kerr)
+\renewcommand{\labelenumi}{A\theenumi.}
+\begin{etaremune}
 
-``Power of the Panopticon? How Leaders' Images Affect
-Compliance.'' 2016.
-\emph{Comparative Political Studies} 49(13): 1704-1738. (with Sarah Bush, Lauren Prather, and Yael
-Zeira)
+ \item ``Can Information Campaigns Impact Preferences toward Vote
+   Selling? Theory and Evidence from Kenya''
+   \emph{Accepted}. \emph{International Political Science Review}.
+   
+ \item \href{https://doi.org/10.1080/17457289.2018.1554664}{
+   ``Interpersonal
+     Incomparability in Citizens' Views of Democracy: Survey Evidence
+     from Ukraine.''} \emph{Forthcoming}. \emph{Journal of Elections,
+     Public Opinion \& Parties}. (with Calvin Garner)
 
-``Competing for
-Transparency: Political Competition and Institutional Reform in
-Mexican States'' 2015. \emph{American Political Science Review}
-109(1): 110-128. (with Daniel Berliner)
+ \item  \href{https://doi.org/10.1016/j.deveng.2017.11.001}{``The Double-edged Sword of Mobilizing Citizens via Mobile Phone in
+  Developing Countries.''} 2018. \emph{Development
+    Engineering}  3: 34-46. (with Danielle Jung, James Long, and Craig McIntosh)
 
-``Aligning Rights and
-Interests'' 2012. \emph{World
+  \item \href{
+https://doi.org/10.1017/S0022278X16000604}{```The Local \emph{Mwananchi} Has Lost Trust': Design, Transition,
+  and Legitimacy in Kenyan Election Management.''} 2016. \emph{Journal
+    of Modern African Studies} 54(4): 671-702. (with Nicholas Kerr)
+
+ \item  \href{https://doi.org/10.1177/0010414016633228}
+{``Power of the Panopticon? How Leaders' Images Affect Compliance.''}
+  2016.  \emph{Comparative Political Studies} 49(13): 1704-1738. (with
+  Sarah Bush, Lauren Prather, and Yael Zeira)\\
+  ---Media coverage: \href{https://marginalrevolution.com/marginalrevolution/2016/07/results-free-review.html}{Marginal Revolution},
+  \href{https://www.washingtonpost.com/news/monkey-cage/wp/2016/08/25/heres-what-happens-when-scientists-evaluate-research-without-knowing-the-results/?noredirect=on&utm_term=.77408b17a4a9}
+  {Washington Post: The Monkey Cage}, \href{https://www.psypost.org/2016/12/scientists-investigate-subliminal-authoritarian-imagery-encourages-citizens-obey-46570}{ PsyPost}
+
+ \item  \href{https://doi.org/10.1177/0010414016633228}{``Competing for Transparency: Political Competition and
+  Institutional Reform in Mexican States.''} 2015. \emph{American
+  Political Science Review} 109(1): 110-128. (with Daniel Berliner)
+
+
+\item \href{http://siteresources.worldbank.org/EXTNWDR2013/Resources/8258024-1320950747192/8260293-1320956712276/8261091-1348683883703/WDR2013_bp_Aligning_Rights_and_Incentives.pdf}{``Aligning Rights and
+Interests'' } 2012. \emph{World
   Development Report: Jobs Background Paper}. Washington, D.C.: World
 Bank. (with Christoper Adolph, Daniel Berliner, Anne
 Greenleaf, Milli Lake, Margaret Levi, and Jennifer Noveck)
+\end{etaremune}
 
-\section{\sc  Other Publications}
 
-``Development Traps and Escaping Development
-Traps: What Can We Learn from Freedom of Information Laws?'' 2016. \emph{The International Trade Journal }30(5): 378-382.
+\section{\sc  Editor-Reviewed Publications}
 
-``Implausible Incarceration
-Data Need to Be Addressed'' 2013. \emph{The Lancet Global Health} 1(6):
-e334-- e335. (with Hans Gutbrod)
+\renewcommand{\labelenumi}{O\theenumi.}
 
-``Opinion Survey Opportunities and Exit Poll
-Limitations'' 2009. In \emph{Georgia -- Presidential and Parliamentary
-  Elections 2008: Lessons Learned}, ed. Igor D. Gaon. Tbilisi: Council
-of Europe/OSCE, pp 256--291. (with Hans Gutbrod)
+\begin{etaremune}
+\item \href{https://doi.org/10.1080/23761199.2018.1522796}{``Pre-acceptance as a method to combat publication bias in area studies: a pilot in the Caucasus''} 2018.  \emph{Caucasus Survey} 6(3): 224-229.
+    
+\item ``Lessons from Results-Blind Review'' 2018.  \emph{The
+    Political Economist} 14(1): 10-13. (with Sarah Bush, Lauren Prather, and Yael Zeira)
 
-``Tajikistan: from refugee sender to labor exporter.''
-2006. \emph{Migration Information Source}.
+ \item ``Development Traps and Escaping Development Traps: What Can We
+  Learn from Freedom of Information Laws?'' 2016. \emph{The
+    International Trade Journal } 30(5): 378-382.
+
+ \item  ``Implausible Incarceration Data Need to Be Addressed''
+  2013. \emph{The Lancet Global Health} 1(6): e334-- e335. (with Hans
+  Gutbrod)
+
+ \item  ``Opinion Survey Opportunities and Exit Poll Limitations'' 2009. In
+  \emph{Georgia -- Presidential and Parliamentary Elections 2008:
+    Lessons Learned}, ed. Igor D. Gaon. Tbilisi: Council of
+  Europe/OSCE, pp 256--291. (with Hans Gutbrod)
+
+\item  ``Tajikistan: from refugee sender to labor exporter.''
+  2006. \emph{Migration Information Source}.
+\end{etaremune}
+
  
 \section{\sc Book Reviews}
+\renewcommand{\labelenumi}{R\theenumi.}
+
+\begin{etaremune}
 ``Book Review: I Say to You: Ethnic Politics and the Kalenjin in
 Kenya'' 2012. \emph{Comparative Political Studies} 45(12): 1691--1695.
+\end{etaremune}
+
+\section{\sc Blogs and Popular Press}
+\renewcommand{\labelenumi}{M\theenumi.}
+
+\begin{etaremune}
+
+\href{https://onthinktanks.org/articles/get-credible-or-a-modest-proposal-to-implement-pre-registration-in-think-tank-research/}{``Get
+credible! …Or a modest proposal to implement pre-registration in think
+tank research.''} \emph{On Think Tanks}. (with Dustin Gilbreath)
+\end{etaremune}
 
 \section{\sc Under Review}
-``The Double-edged Sword of Mobilizing Citizens via Mobile Phone in
-Developing Countries'' (with Danielle Jung, James Long, and Craig
-McIntosh)
+\renewcommand{\labelenumi}{UR\theenumi.}
 
-``Can Information Campaigns Impact Vote-buying Preference? Evidence
-From Kenya.'' 
+\begin{enumerate}
 
-``Differential Item Function in Sub-National Survey Data? Evidence
-from Ukraine'' (with Calvin Garner)
+\item ``Evaluating Female Candidates in a Corrupt Environment with Low
+Levels of Female Representation: Evidence from Ukraine''
 
-\section{\sc Working Papers}
-
-``Shaping Expectations with Pre-Election Information:
+\item ``Shaping Expectations with Pre-Election Information:
 Evidence from a Laboratory Experiment in the Country of Georgia.''
 
-``How Do Public Opinion Polls Impact Elite Behavior? New Theory, New
-Data Collection Design.''
+\item ``Citizen solidarity, ethnic rivalry, or self-interest? Implicit bias,
+social desirability, and policy preferences during wartime'' (with
+Calvin Garner)
 
-``Priming Gender in A Corrupt Environment: Evidence from Ukraine''
+\item ``The Distributive Politics of Government Information: Political Targeting and Information Disclosure in Mexico.'' (with Dan Berliner, Benjamin Bagozzi,
+and Brian Palmer-Rubin)
 
-``Covering the campaign: Political Attention in the 2014 South African
-Presidential Election'' (with Jeffery Arnold, Danielle Jung, and James Long)
+\item \href {10.31219/osf.io/tsmvz}{``Weaponizing Election Petitions'' }(with
+  Nicholas Kerr and Saewon Park)
 
-\\
+  \item\href{https://osf.io/preprints/socarxiv/af9jq/}{``Covering the Campaign: Political Attention in the 2014 South African
+Presidential Election''} (with Jeffrey Arnold, Danielle Jung, and James Long)
+
+\end{enumerate}
+
+
+\section{\sc Working Papers}
+\renewcommand{\labelenumi}{WP\theenumi.}
+
+\begin{enumerate}
+
+\item ``The Niqab Effect'' (with Aengus Bridgman, Costin Ciobanu, Danielle
+Bohonos and Christopher Ross)
+
+\item ``Media Attention and Bureaucratic Responsiveness'' (with Benjamin
+Bagozzi, Daniel Berliner and Brian Palmer-Rubin)
+
+\item ``Hey There Youngster? Interviewer-Respondent Age Differences'' (with Andrew McCormack)
+
+\item ``Shared ethnic identity and preferences for conflict resolution in
+Eastern Ukraine'' (with Calvin Garner)
+
+\end{enumerate}
 \centerline{\emph{Working paper manuscripts available on request}}
 
 
 \section{\sc Manuscripts in Preparation}
-``Using Big Data to Measure Government Responsiveness'' (with Benjamin
-Bagozzi, Daniel Berliner and Brian Palmer-Rubin)
+\renewcommand{\labelenumi}{MP\theenumi.}
 
-``Machine Learning Kenyan Elections''
+\begin{enumerate}
+\item ``Machine Learning Kenyan Elections'' (with Nicholas Kerr)
+\item ``Face-to-face: Age differences in response patterns in Africa''
+  (with Andrew McCormack)
+\item ``How do politicians think about their competitiveness?''
+\item ``Petitioning Elections'' (with Nicholas Kerr)
 
-``Determinants of Municipal Compliance with Freedom of Information
-Requests: Evidence from Georgia. '' (with Daniel Berliner)
+\end{enumerate}
+% ``Determinants of Municipal Compliance with Freedom of Information
+% Requests: Evidence from Georgia. '' (with Daniel Berliner)
+
+\section{\sc Book Project}
+\emph{Foundations of Political Participation} (with Danielle Jung and
+James D. Long)\\
+\\
+Democratic governance depends on political
+ participation. Democratic theorists have long argued that more
+  robust participation across an array of possible actions, the more
+  robust the democratic contract. To study the foundations of
+  political participation, we created the largest free-standing
+  (Information and Communications Technology (ICT) platform
+  specifically designed promote a variety of forms of political
+  participation. Our study took place during the 2014 South African
+  general election. We collected experimental and observational data
+  to examine digital and real world participation, ranging from
+  digital registration and engagement to costly, real world
+  participation like serving as election monitors.
 
 
-\section{\sc Awards} 
+\section{\sc Awards \& Scholarships} 
+\textline[t]{2018}{``Discrétion ou capacité : Utilisation de
+  mégadonnées pour modéliser la faculté de réponse des gouvernements.'' FRQSC Soutien à la recherche pour la relève professorale}{\$56,8163}
+\textline[t]{2018}{``Studying Government Accountability and Responsiveness with Big Data on Citizen-Government Interactions.'' SSHRC Insight Development Grant} {\$62,089}
+\textline[t]{2018}{``Democracy in disruption? Engaging Canadians to
+  face emerging threats.'' SSHRC Connection Grant (Fenwick McKelvey,
+  Lead-PI)}{\$49,853}
 \textline[t]{2017}{``What's in a Tally.'' SSHRC Internal Grant}{\$5,000}
 \textline[t]{2015}{``Power of the Panopticon.'' \emph{Comparative
     Political Studies: Transparency Special Issue} (with
@@ -226,10 +323,10 @@ Political Science}{\$2,300}
 \textline[t]{2004--2006}{Merit-based tuition scholarship, Georgetown
   University}{}
 
-\section{\sc Data Sets}
-``Georgian Candidates: A Relational Database of All Georgian
-Candidates who Ran for National Office since Independence.'' (with
-David Sichinava)
+% \section{\sc Data Sets}
+% ``Georgian Candidates: A Relational Database of All Georgian
+% Candidates who Ran for National Office since Independence.'' (with
+% David Sichinava)
 
 \section{\sc Professional Evaluations and Reports}
 
@@ -248,12 +345,61 @@ Danish Refugee Council: Tbilisi Georgia, February 2009.
 A Sociological Survey of Six Communities'' (with Anush Dulgaryan and
 Andrew Golda).  USAID: Yerevan, Armenia, 2009.
 
+\section{\sc Recent Presentations}
 
-\section{\sc Teaching}
+``What Can we Learn From Election Petitions? An Analysis of Kenya's
+2013 Election-related Court Cases''  Paper Presented at
+American Political Association Annual Convention, Boston, August 30-
+September 2, 2018.
+
+ ``Ethnic Rivalry or Citizen Solidarity?.'' Paper presented at Temple
+ University Comparative Politics Colloquium, Philadelphia, United
+ States, March 26, 2018.
+
+``Covering the Campaign: The 2014 South African Presidential Election.'' Paper Presented at
+American Political Association Annual Convention, San Francisco, September
+1-4, 2017.
+
+``The Tymoshenko Effect? A Survey Experiment Testing Perceived Corruption of Female Politicians in Ukraine''
+Paper presented at Midwest Political Science Association Annual
+Convention, Chicago, April 16-19, 2017.
+
+``Evaluating Women Candidates in a Corrupt Environment with Low Levels of Women’s Representation.''
+CRRC 5th Annual Methodological Conference, Tbilisi, Georgia, July 2017.
+
+``The future of transparency and experimentation: new ideas and
+initiatives. Trends behind the numbers: bridging policies and needs''
+Invited presentation, Tbilisi Georgia, January 2017. 
+
+``Do Pre-Election Polls Changes Citizens' Beliefs or Behavior?
+Evidence from a Laboratory Experiment in the Country of Georgia.''
+Paper presented at Midwest Political Science Association Annual
+Convention, Chicago, April 16-19, 2015.
+
+``Power of the Panopticon? How Leaders' Images Affect Compliance.''
+Paper presented at Midwest Political Science Association Annual
+Convention, Chicago, April 16-19, 2015.
+
+``Competing for Transparency: Political Competition and Administrative
+Reform in Mexican States'' (with Daniel Berliner). Paper presented at
+the 2013 APSA Annual Meeting, Chicago, August 29-September, 2013.
+
+``Electoral Management Bodies and the Quality of Elections in
+ sub-Saharan Africa between 1990 and 2010'' (with Stephan Hamberg).
+Paper presented at
+the 2013 APSA Annual Meeting, Chicago, August 29-September, 2013.
+
+%  ``The Political Determinants of Working Hour Regulation and Enforcement'' (with Magaret Levi and Jennifer Noveck). Paper presented at 2012 Society for the Advancement of
+% Socioeconomics (SASE) Conference, MIT, June 28-30, 2012.
+
+% ``Into Thin Air: Collecting Migration Statistics in the South
+% Caucasus.'' Paper presented at annual Central Eurasian Studies
+% Society Conference, University of Washington, Seattle, October 16--19, 2007.
+\section{\sc Teaching \& Mentorship}
+\textbf{Courses Taught}
 {\em Instructor}\\
 \vspace{-.1in}
 \begin{list1}
-
 \item[] Undergraduate courses:
    \begin{list2}
    \item[] Introduction to Quantitative Social Science [POLI 311]
@@ -285,6 +431,32 @@ Andrew Golda).  USAID: Yerevan, Armenia, 2009.
      \item [] Advances in Content Analysis Methods [POL S 559] (UW)
      \item [] Maximum Likelihood Estimation ($\times$2) [CS\&SS/POL S
        510] (UW)
+\end{list2}
+\end{list1}
+
+\textbf{}
+{\em Mentorship}\\
+\vspace{-.1in}
+\begin{list1}
+\item[] Graduate:
+  \begin{list2}
+  \item[] Joshua Borden (PhD), Dissertation Committee
+  \item[] Sakeef Kim (PhD) [Sociology], Dissertation Committee
+  \item[] Costin Ciobanu (PhD), Co-author, Lab Member
+  \item[] Aengus Bridgman (PhD), Co-author, Lab Member
+   \item[] Andrew McCormack (MA), Research Assistant, Lab Member, Co-author
+   \item[] Saewon Park (MA) Advisor, Research Assistant, Lab Manager, Co-author
+   \item[] Etienne Gagnon (MA),  Advisor, Lab Member
+   \item[] Annie Chen (MA), Advisor, Lab Member
+   \item[] Henry Atkins MA, Advisor
+     
+\end{list2}
+
+ \item[] Undergraduate:
+   \begin{list2}
+   \item[] Henry McKenzie, Honour's Thesis Advisor
+   \item[] Marie Lemieux, Independent Study Advisor
+   \item[] Tim Roy, Research Assistant, Lab Member
 \end{list2}
 \end{list1}
 
@@ -337,51 +509,23 @@ Tbilisi, Georgia
   Affairs (NDI).
 \end{list1}
 
-\section{\sc Conference Presentations}
-``Do Pre-Election Polls Changes Citizens' Beliefs or Behavior?
-Evidence from a Laboratory Experiment in the Country of Georgia.''
-Paper presented at Midwest Political Science Association Annual
-Convention, Chicago, April 16-19, 2015.
 
-``Power of the Panopticon? How Leaders' Images Affect Compliance.''
-Paper presented at Midwest Political Science Association Annual
-Convention, Chicago, April 16-19, 2015.
-
-``Electoral Management Bodies in New Democracies:
-Design, Transition and Legitimacy'' (with Nicholas Kerr). Paper
-presented at 2014 IPSA World Congress of Political Science, Montreal, July 19-24, 2014. 
-
-``Competing for Transparency: Political Competition and Administrative
-Reform in Mexican States'' (with Daniel Berliner). Paper presented at
-the 2013 APSA Annual Meeting, Chicago, August 29-September, 2013.
-
-``Electoral Management Bodies and the Quality of Elections in
- sub-Saharan Africa between 1990 and 2010'' (with Stephan Hamberg).
-Paper presented at
-the 2013 APSA Annual Meeting, Chicago, August 29-September, 2013.
-
- ``The Political Determinants of Working Hour Regulation and Enforcement'' (with Magaret Levi and Jennifer Noveck). Paper presented at 2012 Society for the Advancement of
-Socioeconomics (SASE) Conference, MIT, June 28-30, 2012.
-
-``Who's Paying Attention to What? Armenian
- and Azerbaijani Perceptions of Conflict''  (with Arpine Porsughyan). Paper presented at 2009
- Association for the Study of Nationalities (ASN) Conference, Columbia
- University, New York, April 2009.
-
-``Into Thin Air: Collecting Migration Statistics in the South
-Caucasus.'' Paper presented at annual Central Eurasian Studies
-Society Conference, University of Washington, Seattle, October 16--19, 2007.
 
 \section{\sc Skills} 
-\textbf{Statistical Packages}:  Stata, SPSS. \par\smallskip
-\textbf{Computer Languages:} R, Python, bash and Unix shell scripts. \par\smallskip
-\textbf{Computer Applications:} emacs, qGIS, ArcGIS, CSPro,  \LaTeX, Inquisit Millisecond.\par\smallskip
+\textbf{Statistical Packages}:  Stata, SPSS \\
+\textbf{Computer Languages:} R, Python, bash and Unix shell scripts \\
+\textbf{Computer Applications:} emacs, qGIS, ArcGIS, CSPro,  \LaTeX
+Inquisit Millisecond \\
 \textbf{Languages:} Proficient in Spanish; Research skills in
-  Georgian, German, Russian; Rusty in Slovak; Elementary Turkish, Swahili.
+  Georgian, German, Russian; Rusty in Slovak; Elementary Turkish,
+  Swahili \\
 
 \section{\sc Memberships}
 American Political Science Association \\
-Midwest Political Science Association
+Midwest Political Science Association\\
+PolMeth\\
+African Studias Association\\
+International Studies Association
 
 \section{\sc Field Research}
 Armenia, 2006-2010  \\
@@ -389,32 +533,99 @@ Azerbaijan, 2006-2010\\
 Georgia, 2006-2010, 2014-15 \\
 Kenya 2010-2015 \\
 South Africa, 2014 \\
-Ukraine, 2014, 2015 \\
+Ukraine, 2014, 2015, 2018 \\
 United Arab Emirates, 2015 \\
 
-\section{\sc Service}
-\textbf{Journal Reviewer: }\\
-\emph{European Political Science Review}, \emph{Journal of International Relations and
-  Development}, \emph{Journal of Politics} \par\smallskip
+
+\section{\sc  Professional Service}
+\textbf{Departmental Service}\\
+\vspace{-3em}
+\begin{tabbing}
+2018-19    \=  Undergraduate Advisor\\
+\> Comparative Behavior Search Committee\\
+\> Quantitative Methods Coordinator \\
+2017-18    \=  Comparative Behavior Search Committee\\
+\> Quantitative Methods Coordinator
+\end{tabbing}
+
+\textbf{University Service}\\
+Founder of R, Math and Replicable Summer Workshops Program
+
+\begin{tabbing}
+2019-20 \= B.A.\&Sc. Program Administration Committee \\
+\> Co-director  R, Math and Replicable Summer Workshops \\
+2018-19 \=  Co-director  R, Math and Replicable Summer Workshops\\
+2017-18 \=  Co-director  R, Math and Replicable Summer Workshops
+\end{tabbing}
+
+
+\textbf{Profession}\\
+\vspace{-3em}
+
+\begin{tabbing}
+2018-19 \=  SPSA, Discussant, Chair\\
+\> MPSA, Discussant \\
+\> External Jury Member David Wutchiet (Sociology UdeM) \\
+\> CIPPS, Works in Progress, Discussant\\
+\\
+2017-18 \=  APSA, Discussant, Chair\\
+\> International Advisory Board Member ESRC (UK) Grant ``Shadows of
+The Gulag''\\
+\\
+2016-2017 MPSA, Discussant, Chair \\
+\end{tabbing}
+\vspace{-2em}
+
+\textbf{Journal Peer Review}\\
+\emph{British Journal of Political Science},
+\emph{Canadian Journal
+  of Political Science},
+\emph{Comparative Political Studies},
+\emph{Electoral Studies},
+\emph{European Political Science Review},
+\emph{International Journal of Health Policy and Management},
+\emph{Journal of International Relations and Development},
+\emph{Journal of Modern African Studies},
+\emph{Journal of Politics},
+\emph{Political Science Research and Methods},
+\emph{Regulation \& Governance}\par\smallskip
+
+\textbf{Grant Review}\\
+Agencia Nacional de Investigaci\'on e Innovaci\'on (Uruguay)
+
+\textbf{Government Agency Review}\\
+Japanese International Cooperation Agency Research Institute (JICA-RI)
+
+
 \textbf{Invited discussant}: \\
   Cambridge University Press Book Seminar on
-Isabel Mares' manuscript \emph{From Open Secrets to Secret Voting}. Seattle, WA. Autumn 2014. \par\smallskip
+Isabel Mares' manuscript \emph{From Open Secrets to Secret Voting}. Seattle, WA. Autumn 2014. \\
  Severyns Ravenholt Comparative Politics Seminar on
 Jesse Driscoll's' manuscript \emph{Warlords \& Coalition Politics in
   Post-Soviet States}. Seattle, WA. Autumn 2013. \par\smallskip
+
+
+% \section{\sc  Departmental Service}
+
+
+% \section{\sc  University Service}
+
+\section{\sc  Other Service}
 \textbf{Volunteer}: \\
-Software Carpentry, 2013--  \\
+Open North 2017 -- Advisor to applied research lab
+scientists.\\
+Software Carpentry, 2013 -- 
 Teach computational skills to
-scientists.\par\smallskip
-Transparify, 2013--\\
+scientists.\\
+Transparify, 2013--
  Perform statistical analysis for NGO that promotes
-financial transparency amongst NGOs.  \par\smallskip
-\textbf{Graduate Student Member, Faculty Search Committee}, Big data
-hire, 2013. \par\smallskip
-\textbf{\LaTeX Trainer}, Teach introductory \latex course at the University of
-Washington, 2010--. \par\smallskip
-\textbf{Junior Faculty Development Program Interviewer} --- American Council for
-International Education (ACCELS), 2007--2010. \par\smallskip
+financial transparency amongst NGOs.  \\
+% \textbf{Graduate Student Member, Faculty Search Committee}, Big data
+% hire, 2013. \par\smallskip
+% \textbf{\LaTeX Trainer}, Teach introductory \latex course at the University of
+% Washington, 2010--. \par\smallskip
+% \textbf{Junior Faculty Development Program Interviewer} --- American Council for
+% International Education (ACCELS), 2007--2010. \par\smallskip
 \textbf{International Election Observer}, South African 2014 General
 Elections, Georgian 2008 Presidential Elections, 2008 Ach'aran Supreme
 Council Elections. 
