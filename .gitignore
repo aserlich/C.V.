@@ -1,3 +1,6 @@
+*.bbl
+*.fls
+*.out
 *.pdf
 *.aux
 *.blg
